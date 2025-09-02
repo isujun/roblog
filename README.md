@@ -1,24 +1,87 @@
-# README
+# Roblog (Ruby on Rails)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple blog application built with Ruby on Rails.  
+This app allows users to create, read, update, and delete blog posts with titles and content.
 
-Things you may want to cover:
+## Features
+- CRUD:
+- Fields:
+- Validations:
 
-* Ruby version
+## Ruby version
+- Ruby 3.2.5  
+- Rails 8.0.2
 
-* System dependencies
+> It is recommended to use [rbenv](https://github.com/rbenv/rbenv) or [rvm](https://rvm.io/) to manage Ruby versions.
 
-* Configuration
+## System dependencies
+- **Database**: SQLite3 (default for development & test) / PostgreSQL (optional for production)  
+- **Tailwindcss**: styling modern UI
+- **Bundler**: manages gem dependencies  
 
-* Database creation
+## Configuration
 
-* Database initialization
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/isujun/roblog.git
+   cd roblog
 
-* How to run the test suite
+2. Install ruby dependencies
+    ```bash
+    bundle install
+    ```
+## Database creation
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Create a new database:
+    ```bash
+    rails db:create
+    ```
 
-* Deployment instructions
+## Database initialization
 
-* ...
+1. Run database migrations:
+    ```bash
+    rails db:migrate
+    ```
+
+## How to run the test suite
+
+Rails comes with Minitest by default.
+1. To run all tests:
+    ```bash
+    rails test
+    ```
+
+## Service
+- Job queues: ActiveJob (default adapter: Async)
+- Cache: FileStore (default), can be switched to Redis for production
+- Action Mailer: not configured yet (can be added for email notifications)
+
+
+## Deployment instructions
+
+1. Configure environment variables for production (SECRET_KEY_BASE, DATABASE_URL, etc).
+2. Run database migrations on the server:
+    ```bash
+    rails db:migrate RAILS_ENV=production
+    ```
+3. Start the rails server in production mode:
+    ```bash
+    rails s -e production
+    ```
+4. Deployment platforms:
+    - netlify
+    - fly.io
+    - Digital Ocean
+
+
+## Project structure
+- Model:
+- Controller:
+- Views:
+- Routes:
+
+
+## Screenshot
+- Page1
+- Page2
