@@ -85,3 +85,4 @@ Rails comes with Minitest by default.
 ## Screenshot
 - Page1
 - Page2
+- Page3
