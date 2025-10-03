@@ -77,7 +77,6 @@ GEM
     ast (2.4.3)
     base64 (0.3.0)
     bcrypt_pbkdf (1.1.1)
-    bcrypt_pbkdf (1.1.1-arm64-darwin)
     bcrypt_pbkdf (1.1.1-x86_64-darwin)
     benchmark (0.4.1)
     bigdecimal (3.2.2)
@@ -180,8 +179,6 @@ GEM
       racc (~> 1.4)
     nokogiri (1.18.9-arm-linux-musl)
       racc (~> 1.4)
-    nokogiri (1.18.9-arm64-darwin)
-      racc (~> 1.4)
     nokogiri (1.18.9-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.18.9-x86_64-linux-gnu)
@@ -254,7 +251,7 @@ GEM
     regexp_parser (2.11.2)
     reline (0.6.2)
       io-console (~> 0.5)
-    rexml (3.4.2)
+    rexml (3.4.4)
     rubocop (1.80.1)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
@@ -284,11 +281,13 @@ GEM
       rubocop-performance (>= 1.24)
       rubocop-rails (>= 2.30)
     ruby-progressbar (1.13.0)
-    rubyzip (3.0.2)
+    rubyzip (3.1.1)
     securerandom (0.4.1)
-    selenium-webdriver (4.35.0)
+    selenium-webdriver (4.36.0)
       base64 (~> 0.2)
+      json (<= 2.13.2)
       logger (~> 1.4)
+      prism (~> 1.0, < 1.5)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
@@ -312,7 +311,6 @@ GEM
     sqlite3 (2.7.3-aarch64-linux-musl)
     sqlite3 (2.7.3-arm-linux-gnu)
     sqlite3 (2.7.3-arm-linux-musl)
-    sqlite3 (2.7.3-arm64-darwin)
     sqlite3 (2.7.3-x86_64-darwin)
     sqlite3 (2.7.3-x86_64-linux-gnu)
     sqlite3 (2.7.3-x86_64-linux-musl)
@@ -329,11 +327,13 @@ GEM
     tailwindcss-rails (3.3.2)
       railties (>= 7.0.0)
       tailwindcss-ruby (~> 3.0)
+    tailwindcss-ruby (3.4.17-aarch64-linux)
+    tailwindcss-ruby (3.4.17-arm-linux)
     tailwindcss-ruby (3.4.17-x86_64-darwin)
+    tailwindcss-ruby (3.4.17-x86_64-linux)
     thor (1.4.0)
     thruster (0.1.15)
     thruster (0.1.15-aarch64-linux)
-    thruster (0.1.15-arm64-darwin)
     thruster (0.1.15-x86_64-darwin)
     thruster (0.1.15-x86_64-linux)
     timeout (0.4.3)
@@ -367,7 +367,6 @@ PLATFORMS
   aarch64-linux-musl
   arm-linux-gnu
   arm-linux-musl
-  arm64-darwin
   x86_64-darwin
   x86_64-linux
   x86_64-linux-gnu
